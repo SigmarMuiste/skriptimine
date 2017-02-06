@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+echo -n "Sigmar Muiste, " #Kirjutab minu nime reavahetuseta
+echo "ISP16"    #Kirjutab õppegrupi minu nime taha
+echo "Mulle tundub antud aine huvitavana." #Kirjutab, mida ma ainest arvan
+echo "Olen uhke, et olen jõudnud tunnitööga lõppu." #Kirjeldab minu praegust muljet
+#
+#skripti lõpp
