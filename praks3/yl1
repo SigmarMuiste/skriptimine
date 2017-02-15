@@ -10,3 +10,6 @@ echo "Tere, $kasutaja!"
 # loome ja väljastame kellaaja
 kell=`date +'%H:%M'`
 echo "kell on $kell"
+# loome ja väljastame kuupäeva
+kuupaev=`date +'%d. %B'`
+echo "täna on $kuupäev"
