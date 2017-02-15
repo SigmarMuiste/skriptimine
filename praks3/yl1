@@ -6,4 +6,7 @@
 # väärtus saadetakse whoami käsust
 kasutaja=`whoami`
 # väljastame muutuja väärtuse koos seletusega
-echo "Tere, $kasutaja"
+echo "Tere, $kasutaja!"
+# loome ja väljastame kellaaja
+kell=`date +'%H:%M'`
+echo "kell on $kell"
