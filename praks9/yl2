@@ -2,16 +2,16 @@
 #
 # See skript teeb tärnid ja read, mis sa ise sisestad
 #
-echo -n "Sisesta ridade arv: " #Küsib ridade arvu
-read arv
-echo -n "Sisesta tarnide arv reas: " #Küsib tärnide arvu reas
-read reas
-for (( i = 1; i <= $arv; i++ ))		### outer for loop ###
+	   echo -n "Sisesta ridade arv: " #Küsib ridade arvu
+      read arv
+	   echo -n "Sisesta tarnide arv reas: " #Küsib tärnide arvu reas
+      read reas
+      for (( i = 1; i <= $arv; i++ ))		### outer for loop ###
 do
-	echo -n "$i. "
+	   echo -n "$i. "
 	for (( j = 1 ; j <= $reas; j++ ))	### Inner for loop ###
 	do
-		echo -n "* "
+	   echo -n "* "
 	done
-      echo "" ### print the new line ###
+           echo "" ### print the new line ###
 done
