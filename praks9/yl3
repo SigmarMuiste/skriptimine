@@ -18,7 +18,7 @@ do
 		echo -n "* "
 		for (( t=2; t<$reas; t++ ))
 		do
-			echo -n " "
+			echo -n "  "
 		done
 		echo -n "* "
 	fi
