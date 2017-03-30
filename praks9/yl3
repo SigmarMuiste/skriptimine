@@ -1,0 +1,26 @@
+#! /bin/bash
+#
+# See skript teeb tärnid ja read, mis sa ise sisestad
+#
+	   echo -e "Sisesta ridade arv: " #Küsib ridade arvu
+      read arv
+	   echo -e "Sisesta tarnide arv reas: " #Küsib tärnide arvu reas
+      read reas
+      for (( i = 1; i <= $arv; i++ ))		### outer for loop ###
+do
+	   echo -n "$i. "
+	if [ $i -eq 1 -o $i -eq $arv ]; then
+		for (( t=1; t<=$reas; t++ ))
+		do
+			echo -n "* "
+		done
+	else
+		echo -n "* "
+		for (( t=2; t<$reas; t++ ))
+		do
+			echo -n " "
+		done
+		echo -n "* "
+	fi
+	echo ""
+done
