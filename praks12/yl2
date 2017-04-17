@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Täistunni järgi teavitamine, tervitamine ja paneb ise kellaaja
+#
+#
+kell=`date | cut -c12-13`
+#tuleb kontrollida, mis vastus anti
+if [ $kell -ge 6 -a $kell -lt 12 ]; then
+		vastus="Tere hommikust" #Väljastab Tere hommikust kella vahemikus 6-12
+elif [ $kell -ge 12 -a $kell -lt 18 ];then
+		vastus="Tere päevast"   #Väljastab Tere päevast kella vahemikus 12-18
+elif [ $kell -ge 18 -a $kell -lt 22 ]; then
+		vastus="Tere õhtust"    #Väljastab Tere õhtust kella vahemikus 18-22
+elif [ $kell -ge 22 -a $kell -lt 24 ]; then
+		vastus="Head ööd"       #Väljastab head ööd kella vahemikus 22-24
+elif [ $kell -ge 0 -a $kell -lt 6 ]; then
+		vastus="Head ööd"       #Väljastab head ööd kella vahemikus 0-6
+else
+		vastus="Vale sisestus"  #Väljastab veateate
+fi
+a=`whoami`
+echo "$vastus, $a!"
+#skripti lõpp
