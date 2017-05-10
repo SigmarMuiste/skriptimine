@@ -1,0 +1,17 @@
+#!/bin/bash
+# Sigmar Muiste ISP16 Kasutaja tervitus
+#
+#Väärtus saadakse whoami käsust
+kasutaja=`whoami`
+#Väljastatakse kasutaja nime
+echo "Tere, $kasutaja!"
+# kellaaja ja kuupäeva väärtused
+kell=`date +'%H:%M'`
+kuupaev=`date +'%D'`
+# Väljastatakse kuupäev ja kellaaeg
+echo "Täna on $kuupaev kell $kell"
+echo "=========================================="
+# Kalendri väärtus 
+kalender= cal
+#Väljastatakse kalendel
+echo "$kalender"
